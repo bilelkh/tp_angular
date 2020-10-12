@@ -1,0 +1,3 @@
+<input type="number" [(ngModel)]="montant" ngModel>
+<app-to-euro-convert (sendMontant)="getNewMontant($event)" [initialMontant]="montant"></app-to-euro-convert>
+{{newMontant}}
